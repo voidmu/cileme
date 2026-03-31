@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>辞了么 - 结果签文</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-result">
+  <main class="container">
+    <section class="card result-card">
+      <div class="pixel-cloud cloud-b" aria-hidden="true"></div>
+      <div class="pixel-cloud cloud-c" aria-hidden="true"></div>
+      <div class="sticker-row">
+        <span class="bead-icon bead-heart" aria-hidden="true"></span>
+        <span class="bead-icon bead-star" aria-hidden="true"></span>
+        <span class="bead-icon bead-spark" aria-hidden="true"></span>
+      </div>
+      <h1>猫娘娘签文</h1>
+      <p class="subtitle">你的硬币结果是：</p>
+
+      <p class="result-badge" id="resultBadge">--</p>
+      <p class="grade-badge" id="gradeBadge">--</p>
+      <div class="pixel-dialog">[FORTUNE LOG] 本次签文已生成，请认真查收。</div>
+      <p class="fortune" id="fortuneText">签文加载中...</p>
+
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label">勇气</span>
+          <div class="hud-bar"><span class="hud-fill" id="hudCourageResult"></span></div>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">厌班</span>
+          <div class="hud-bar"><span class="hud-fill hud-burn" id="hudBurnoutResult"></span></div>
+        </div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn primary" href="coin.html">再测一次</a>
+        <button class="btn secondary" id="shareBtn" type="button">分享好友</button>
+      </div>
+
+      <p class="paper-note">手账批注：结果不是命令，只是帮你看清你真正偏向哪一边。</p>
+      <div class="pixel-bell" aria-hidden="true"></div>
+      <a class="btn ghost" href="index.html">返回首页</a>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

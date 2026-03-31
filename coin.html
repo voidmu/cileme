@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>辞了么 - 抛硬币</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-coin">
+  <main class="container">
+    <section class="card coin-card">
+      <div class="pixel-cloud cloud-a" aria-hidden="true"></div>
+      <div class="pixel-cloud cloud-c" aria-hidden="true"></div>
+      <div class="sticker-row">
+        <span class="bead-icon bead-spark" aria-hidden="true"></span>
+        <span class="bead-icon bead-coin" aria-hidden="true"></span>
+        <span class="bead-icon bead-star" aria-hidden="true"></span>
+      </div>
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label">勇气</span>
+          <div class="hud-bar"><span class="hud-fill" id="hudCourage"></span></div>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">厌班</span>
+          <div class="hud-bar"><span class="hud-fill hud-burn" id="hudBurnout"></span></div>
+        </div>
+      </div>
+      <h1>辞不辞？</h1>
+      <p class="subtitle">点击按钮，把纠结抛向天空</p>
+
+      <div class="coin-stage">
+        <div class="coin" id="coin" aria-label="决定命运的硬币">
+          <div class="coin-face front">辞</div>
+          <div class="coin-face back">不辞</div>
+          <div class="coin-edge"></div>
+          <div class="coin-particles" id="coinParticles" aria-hidden="true">
+            <span class="particle p1"></span>
+            <span class="particle p2"></span>
+            <span class="particle p3"></span>
+            <span class="particle p4"></span>
+            <span class="particle p5"></span>
+          </div>
+        </div>
+      </div>
+      <div class="pixel-fishbone mini" aria-hidden="true"></div>
+      <div class="pixel-bell mini" aria-hidden="true"></div>
+
+      <div class="pixel-dialog">[COIN CORE] 抛出硬币，读懂你的第一反应。</div>
+      <button class="btn primary" id="flipBtn" type="button">辞不辞</button>
+      <p class="tip">硬币会随机落在「辞」或「不辞」</p>
+      <p class="paper-note">拼豆小贴士：真正想要的答案，通常在抛出硬币的一瞬间你就知道了。</p>
+      <a class="btn ghost" href="index.html">返回首页</a>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
